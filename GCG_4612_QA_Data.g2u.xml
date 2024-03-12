@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SyntaxEdit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Pages>
+    <DefaultPage>
+      <Header />
+      <Footer />
+    </DefaultPage>
+  </Pages>
+  <DisplayStrings />
+  <Selection>
+    <SelectionRect>
+      <Location>
+        <X>0</X>
+        <Y>407</Y>
+      </Location>
+      <Size>
+        <Width>24</Width>
+        <Height>2</Height>
+      </Size>
+      <X>0</X>
+      <Y>407</Y>
+      <Width>24</Width>
+      <Height>2</Height>
+    </SelectionRect>
+    <Options>UseColors OverwriteBlocks SelectLineOnTripleClick CopyLineWhenEmpty SelectWordOnCtrlClick</Options>
+  </Selection>
+  <Gutter>
+    <Options>PaintLineNumbers PaintBookMarks PaintLineModificators</Options>
+  </Gutter>
+  <Margin>
+    <Visible>false</Visible>
+  </Margin>
+  <LineStyles />
+  <LineSeparator />
+  <Printing>
+    <Footer />
+    <Header />
+  </Printing>
+  <WhiteSpace />
+  <TextSource>
+    <Position>
+      <X>0</X>
+      <Y>407</Y>
+    </Position>
+    <Lexer>
+      <Scheme>
+        <Author>Quantum Whale, LLC.</Author>
+        <Copyright>Copyright (c) 2004 - 2014 Quantum Whale LLC.</Copyright>
+        <FileType>gas</FileType>
+        <Version>1.5</Version>
+        <Styles>
+          <Style>
+            <Name>idents</Name>
+            <ForeColor>ControlText</ForeColor>
+          </Style>
+          <Style>
+            <Name>numbers</Name>
+            <ForeColor>ControlText</ForeColor>
+          </Style>
+          <Style>
+            <Name>reswords</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>comments</Name>
+            <ForeColor>Green</ForeColor>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>xmlcomments</Name>
+            <ForeColor>Gray</ForeColor>
+          </Style>
+          <Style>
+            <Name>symbols</Name>
+            <ForeColor>WindowText</ForeColor>
+          </Style>
+          <Style>
+            <Name>whitespace</Name>
+            <ForeColor>WindowText</ForeColor>
+          </Style>
+          <Style>
+            <Name>strings</Name>
+            <ForeColor>Maroon</ForeColor>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>directives</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>htmlparams</Name>
+            <ForeColor>Red</ForeColor>
+          </Style>
+          <Style>
+            <Name>syntax errors</Name>
+            <ForeColor>Red</ForeColor>
+          </Style>
+          <Style>
+            <Name>codes nippets</Name>
+            <ForeColor>Black</ForeColor>
+            <BackColor>255:180:228:180</BackColor>
+          </Style>
+          <Style>
+            <Name>GabReservedWords</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabTokenWithBrackets</Name>
+            <ForeColor>Gray</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabFunctionIntrinsicDebug</Name>
+            <ForeColor>White</ForeColor>
+            <BackColor>Red</BackColor>
+            <FontStyle>Bold</FontStyle>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>GabVariable</Name>
+            <ForeColor>Teal</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabVariableSystemDefined</Name>
+            <ForeColor>Teal</ForeColor>
+            <FontStyle>Bold Italic</FontStyle>
+          </Style>
+          <Style>
+            <Name>GabGui</Name>
+            <ForeColor>OrangeRed</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabProgramSubStartEnd</Name>
+            <ForeColor>Black</ForeColor>
+            <BackColor>LightGray</BackColor>
+            <FontStyle>Bold</FontStyle>
+            <PlainText>true</PlainText>
+          </Style>
+        </Styles>
+      </Scheme>
+    </Lexer>
+    <TextStrings>
+      <Lines>
+        <string>Program.Sub.ScreenSU.Start</string>
+        <string>Gui.Form..Create</string>
+        <string>Gui.Form..Caption("Inspection Data Collection")</string>
+        <string>Gui.Form..Size(5220,9225)</string>
+        <string>Gui.Form..MinX(0)</string>
+        <string>Gui.Form..MinY(0)</string>
+        <string>Gui.Form..Position(0,0)</string>
+        <string>Gui.Form..BackColor(-2147483633)</string>
+        <string>Gui.Form..MousePointer(0)</string>
+        <string>Gui.Form..Event(UnLoad,Form_UnLoad)</string>
+        <string>Gui.Form.txtHold.Create(TextBox,"",True,1215,300,0,1125,135,True,0,"Arial",8,-2147483643,1)</string>
+        <string>Gui.Form.lbl1.Create(Label,"Hold Count",True,900,255,0,135,225,True,0,"Arial",8,-2147483633,0)</string>
+        <string>Gui.Form.frameReWork.Create(Frame)</string>
+        <string>Gui.Form.frameReWork.Size(4740,2355)</string>
+        <string>Gui.Form.frameReWork.Position(135,600)</string>
+        <string>Gui.Form.frameReWork.Caption("Re-Work")</string>
+        <string>Gui.Form.lbl2.Create(Label,"Re-Work Count",True,1245,255,0,30,255,True,0,"Arial",8,-2147483633,0)</string>
+        <string>Gui.Form.lbl2.Parent("frameReWork")</string>
+        <string>Gui.Form.txtWorkCount.Create(TextBox,"",True,1215,300,0,1320,195,True,0,"Arial",8,-2147483643,1)</string>
+        <string>Gui.Form.txtWorkCount.Parent("frameReWork")</string>
+        <string>Gui.Form.lbl5.Create(Label,"Notes Re-Work",True,1320,255,0,75,645,True,0,"Arial",8,-2147483633,0)</string>
+        <string>Gui.Form.lbl5.Parent("frameReWork")</string>
+        <string>Gui.Form.txtNotesReWork.Create(TextboxM)</string>
+        <string>Gui.Form.txtNotesReWork.Size(2115,1155)</string>
+        <string>Gui.Form.txtNotesReWork.Position(90,870)</string>
+        <string>Gui.Form.txtNotesReWork.Parent("frameReWork")</string>
+        <string>Gui.Form.lbl8.Create(Label,"Codes",True,630,255,0,2655,645,True,0,"Arial",8,-2147483633,0)</string>
+        <string>Gui.Form.lbl8.Parent("frameReWork")</string>
+        <string>Gui.Form.ddlCodesRw.Create(DropDownList)</string>
+        <string>Gui.Form.ddlCodesRw.Size(1005,330)</string>
+        <string>Gui.Form.ddlCodesRw.Position(3510,570)</string>
+        <string>Gui.Form.ddlCodesRw.Parent("frameReWork")</string>
+        <string>Gui.Form.cmdAddRW.Create(Button)</string>
+        <string>Gui.Form.cmdAddRW.Size(855,375)</string>
+        <string>Gui.Form.cmdAddRW.Position(3615,1035)</string>
+        <string>Gui.Form.cmdAddRW.Parent("frameReWork")</string>
+        <string>Gui.Form.cmdAddRW.Caption("Add")</string>
+        <string>Gui.Form.cmdAddRW.Event(Click,cmdAddRW_Click)</string>
+        <string>Gui.Form.cmdRemoveRW.Create(Button)</string>
+        <string>Gui.Form.cmdRemoveRW.Size(855,375)</string>
+        <string>Gui.Form.cmdRemoveRW.Position(3615,1545)</string>
+        <string>Gui.Form.cmdRemoveRW.Parent("frameReWork")</string>
+        <string>Gui.Form.cmdRemoveRW.Caption("Remove")</string>
+        <string>Gui.Form.cmdRemoveRW.Event(Click,cmdRemoveRW_Click)</string>
+        <string>Gui.Form.lvwReWork.Create(ListView)</string>
+        <string>Gui.Form.lvwReWork.Size(900,1410)</string>
+        <string>Gui.Form.lvwReWork.Position(2565,855)</string>
+        <string>Gui.Form.lvwReWork.Parent("frameReWork")</string>
+        <string>Gui.Form.lvwReWork.View(2)</string>
+        <string>Gui.Form.lvwReWork.BorderStyle(1)</string>
+        <string>Gui.Form.frameReTest.Create(Frame)</string>
+        <string>Gui.Form.frameReTest.Size(4830,2580)</string>
+        <string>Gui.Form.frameReTest.Position(120,3090)</string>
+        <string>Gui.Form.frameReTest.Caption("Re-Test")</string>
+        <string>Gui.Form.lbl3.Create(Label,"Re-Test Count",True,1155,255,0,120,375,True,0,"Arial",8,-2147483633,0)</string>
+        <string>Gui.Form.lbl3.Parent("frameReTest")</string>
+        <string>Gui.Form.txtTestCount.Create(TextBox,"",True,1215,300,0,1290,300,True,0,"Arial",8,-2147483643,1)</string>
+        <string>Gui.Form.txtTestCount.Parent("frameReTest")</string>
+        <string>Gui.Form.txtNotesCar.Create(TextboxM)</string>
+        <string>Gui.Form.txtNotesCar.Size(2115,1155)</string>
+        <string>Gui.Form.txtNotesCar.Position(150,945)</string>
+        <string>Gui.Form.txtNotesCar.Parent("frameReTest")</string>
+        <string>Gui.Form.lbl7.Create(Label,"Notes CAR",True,1155,255,0,150,720,True,0,"Arial",8,-2147483633,0)</string>
+        <string>Gui.Form.lbl7.Parent("frameReTest")</string>
+        <string>Gui.Form.ddlCodesRT.Create(DropDownList)</string>
+        <string>Gui.Form.ddlCodesRT.Size(975,330)</string>
+        <string>Gui.Form.ddlCodesRT.Position(3510,600)</string>
+        <string>Gui.Form.ddlCodesRT.Parent("frameReTest")</string>
+        <string>Gui.Form.lvwReTest.Create(ListView)</string>
+        <string>Gui.Form.lvwReTest.Size(900,1410)</string>
+        <string>Gui.Form.lvwReTest.Position(2565,945)</string>
+        <string>Gui.Form.lvwReTest.Parent("frameReTest")</string>
+        <string>Gui.Form.lvwReTest.View(2)</string>
+        <string>Gui.Form.lvwReTest.BorderStyle(1)</string>
+        <string>Gui.Form.lbl9.Create(Label,"Codes",True,720,255,0,2655,690,True,0,"Arial",8,-2147483633,0)</string>
+        <string>Gui.Form.lbl9.Parent("frameReTest")</string>
+        <string>Gui.Form.cmdAddReTest.Create(Button)</string>
+        <string>Gui.Form.cmdAddReTest.Size(855,375)</string>
+        <string>Gui.Form.cmdAddReTest.Position(3540,1065)</string>
+        <string>Gui.Form.cmdAddReTest.Parent("frameReTest")</string>
+        <string>Gui.Form.cmdAddReTest.Caption("Add")</string>
+        <string>Gui.Form.cmdAddReTest.Event(Click,cmdAddReTest_Click)</string>
+        <string>Gui.Form.cmdRemoveReTest.Create(Button)</string>
+        <string>Gui.Form.cmdRemoveReTest.Size(855,375)</string>
+        <string>Gui.Form.cmdRemoveReTest.Position(3555,1560)</string>
+        <string>Gui.Form.cmdRemoveReTest.Parent("frameReTest")</string>
+        <string>Gui.Form.cmdRemoveReTest.Caption("Remove")</string>
+        <string>Gui.Form.cmdRemoveReTest.Event(Click,cmdRemoveReTest_Click)</string>
+        <string>Gui.Form.frameMRB.Create(Frame)</string>
+        <string>Gui.Form.frameMRB.Size(4800,2685)</string>
+        <string>Gui.Form.frameMRB.Position(120,5880)</string>
+        <string>Gui.Form.frameMRB.Caption("MRB")</string>
+        <string>Gui.Form.lbl6.Create(Label,"Notes PAR",True,1080,255,0,135,840,True,0,"Arial",8,-2147483633,0)</string>
+        <string>Gui.Form.lbl6.Parent("frameMRB")</string>
+        <string>Gui.Form.txtNotesPAR.Create(TextboxM)</string>
+        <string>Gui.Form.txtNotesPAR.Size(2115,1155)</string>
+        <string>Gui.Form.txtNotesPAR.Position(195,1185)</string>
+        <string>Gui.Form.txtNotesPAR.Parent("frameMRB")</string>
+        <string>Gui.Form.lbl4.Create(Label,"MRB Count",True,1020,255,0,90,375,True,0,"Arial",8,-2147483633,0)</string>
+        <string>Gui.Form.lbl4.Parent("frameMRB")</string>
+        <string>Gui.Form.txtMRBCount.Create(TextBox,"",True,1215,300,0,1140,330,True,0,"Arial",8,-2147483643,1)</string>
+        <string>Gui.Form.txtMRBCount.Parent("frameMRB")</string>
+        <string>Gui.Form.lbl10.Create(Label,"Codes",True,660,255,0,2655,750,True,0,"Arial",8,-2147483633,0)</string>
+        <string>Gui.Form.lbl10.Parent("frameMRB")</string>
+        <string>Gui.Form.ddlMRB.Create(DropDownList)</string>
+        <string>Gui.Form.ddlMRB.Size(930,330)</string>
+        <string>Gui.Form.ddlMRB.Position(3645,705)</string>
+        <string>Gui.Form.ddlMRB.Parent("frameMRB")</string>
+        <string>Gui.Form.lvwMRB.Create(ListView)</string>
+        <string>Gui.Form.lvwMRB.Size(900,1410)</string>
+        <string>Gui.Form.lvwMRB.Position(2565,1065)</string>
+        <string>Gui.Form.lvwMRB.Parent("frameMRB")</string>
+        <string>Gui.Form.lvwMRB.View(2)</string>
+        <string>Gui.Form.lvwMRB.BorderStyle(1)</string>
+        <string>Gui.Form.cmdAddMRB.Create(Button)</string>
+        <string>Gui.Form.cmdAddMRB.Size(855,375)</string>
+        <string>Gui.Form.cmdAddMRB.Position(3675,1170)</string>
+        <string>Gui.Form.cmdAddMRB.Parent("frameMRB")</string>
+        <string>Gui.Form.cmdAddMRB.Caption("Add")</string>
+        <string>Gui.Form.cmdAddMRB.Event(Click,cmdAddMRB_Click)</string>
+        <string>Gui.Form.cmdRemoveMRB.Create(Button)</string>
+        <string>Gui.Form.cmdRemoveMRB.Size(855,375)</string>
+        <string>Gui.Form.cmdRemoveMRB.Position(3690,1665)</string>
+        <string>Gui.Form.cmdRemoveMRB.Parent("frameMRB")</string>
+        <string>Gui.Form.cmdRemoveMRB.Caption("Remove")</string>
+        <string>Gui.Form.cmdRemoveMRB.Event(Click,cmdRemoveMRB_Click)</string>
+        <string>Gui.Form.cmdSave.Create(Button)</string>
+        <string>Gui.Form.cmdSave.Size(1440,375)</string>
+        <string>Gui.Form.cmdSave.Position(3225,135)</string>
+        <string>Gui.Form.cmdSave.Caption("Save/Close")</string>
+        <string>Gui.Form.cmdSave.Event(Click,cmdSave_Click)</string>
+        <string>Program.Sub.ScreenSU.End</string>
+        <string />
+        <string>Program.Sub.Preflight.Start</string>
+        <string>V.Global..BulkDeclareString(sWoSuffix, sSeq)</string>
+        <string>Program.Sub.Preflight.End</string>
+        <string />
+        <string>Program.Sub.Main.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("Main_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string>V.Local.sError.Declare(String)</string>
+        <string />
+        <string>V.Local.sIcon.Declare(String)</string>
+        <string>V.Local..BulkDeclareString(ssql)</string>
+        <string>F.ODBC.Connection!con.OpenConnection(v.Ambient.PDSN,v.Ambient.PUser,v.Ambient.PPass)</string>
+        <string />
+        <string>Function.Intrinsic.Control.If(V.Caller.Hook, = , 15840)</string>
+        <string>	'then rename script 1 button</string>
+        <string>	V.Passed.000049.Set("DATA")</string>
+        <string>Function.Intrinsic.Control.ElseIf(V.Caller.Hook, =, 15860)</string>
+        <string>	'data collection</string>
+        <string>	'icon stuff</string>
+        <string>	F.Intrinsic.String.Build("{0}\GAB\GAS\gss2.ico",V.Caller.PluginsDir,v.Local.sIcon)</string>
+        <string>	Gui.Form..Icon(V.Local.sIcon)</string>
+        <string>	'populate ddls</string>
+        <string>	F.Data.DataTable.CreateFromSQL(   "DDL",  "con" , "Select rTrim(QA) as QA , rTrim(QA) as QA From GCG_4612_Maint_QA" )</string>
+        <string>	GUI.Form.ddlCodesRW.AddItems("DataTable", "DDL", "QA", "QA")</string>
+        <string>	GUI.Form.ddlCodesRT.AddItems("DataTable", "DDL", "QA", "QA")</string>
+        <string>	GUI.Form.ddlMRB.AddItems("DataTable", "DDL", "QA", "QA")</string>
+        <string>	'populate if it already is there?</string>
+        <string>	V.Global.sWoSuffix.Set(V.Passed.000004)</string>
+        <string>	F.Intrinsic.String.Split(V.Global.sWOSuffix, "-", V.Global.sWOSuffix)</string>
+        <string>	V.Global.sSeq.Set(V.Passed.000005)</string>
+        <string>	Function.Intrinsic.Control.CallSub(exists)</string>
+        <string>	GUI.Form..Show</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("Main_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	Function.Intrinsic.Control.CallSub(form_unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.Main.End</string>
+        <string />
+        <string>Program.Sub.Form_UnLoad.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("Form_UnLoad_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string>V.Local.sError.Declare(String)</string>
+        <string />
+        <string>'close all</string>
+        <string>GUI.Form..Visible(False)</string>
+        <string>F.ODBC.Connection!con.Close </string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("Form_UnLoad_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	Function.Intrinsic.Control.End</string>
+        <string />
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.Form_UnLoad.End</string>
+        <string />
+        <string>Program.Sub.cmdAddRW_Click.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("cmdAddRW_Click_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string>V.Local.sError.Declare(String)</string>
+        <string />
+        <string>V.Local.bExists.Declare(Boolean)</string>
+        <string>'check not already in list</string>
+        <string>Gui.Form.lvwReWork.KeyExist(V.Screen.Form!ddlCodesRW.Text, V.Local.bExists)</string>
+        <string>F.Intrinsic.Control.If(V.Local.bExists, =, False)</string>
+        <string>	Gui.Form.lvwReWork.AddListItem(V.Screen.Form!ddlCodesRW.Text,V.Screen.Form!ddlCodesRW.Text)</string>
+        <string>F.Intrinsic.Control.Else</string>
+        <string>	F.Intrinsic.UI.Msgbox("Code exists in the List", "Code Exists")</string>
+        <string>F.Intrinsic.Control.EndIf</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("cmdAddRW_Click_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	Function.Intrinsic.Control.CallSub(form_unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.cmdAddRW_Click.End</string>
+        <string />
+        <string>Program.Sub.cmdRemoveRW_Click.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("cmdRemoveRW_Click_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string>V.Local.sError.Declare(String)</string>
+        <string />
+        <string>Gui.Form.lvwReWork.removeitem(V.Screen.Form!lvwReWork.SelectedItemKey)</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("cmdRemoveRW_Click_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	Function.Intrinsic.Control.CallSub(form_unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.cmdRemoveRW_Click.End</string>
+        <string />
+        <string>Program.Sub.cmdAddReTest_Click.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("cmdAddReTest_Click_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string>V.Local.sError.Declare(String)</string>
+        <string />
+        <string>V.Local.bExists.Declare(Boolean)</string>
+        <string>'check not already in list</string>
+        <string>Gui.Form.lvwReTest.KeyExist(V.Screen.Form!ddlCodesRT.Text, V.Local.bExists)</string>
+        <string>F.Intrinsic.Control.If(V.Local.bExists, =, False)</string>
+        <string>	Gui.Form.lvwReTest.AddListItem(V.Screen.Form!ddlCodesRT.Text,V.Screen.Form!ddlCodesRT.Text)</string>
+        <string>F.Intrinsic.Control.Else</string>
+        <string>	F.Intrinsic.UI.Msgbox("Code exists in the List", "Code Exists")</string>
+        <string>F.Intrinsic.Control.EndIf</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("cmdAddReTest_Click_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	Function.Intrinsic.Control.CallSub(form_unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.cmdAddReTest_Click.End</string>
+        <string />
+        <string>Program.Sub.cmdRemoveReTest_Click.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("cmdRemoveReTest_Click_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string>V.Local.sError.Declare(String)</string>
+        <string />
+        <string>Gui.Form.lvwReTest.removeitem(V.Screen.Form!lvwReTest.SelectedItemKey)</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("cmdRemoveReTest_Click_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	Function.Intrinsic.Control.CallSub(form_unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.cmdRemoveReTest_Click.End</string>
+        <string />
+        <string>Program.Sub.cmdAddMRB_Click.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("cmdAddMRB_Click_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string>V.Local.sError.Declare(String)</string>
+        <string />
+        <string>V.Local.bExists.Declare(Boolean)</string>
+        <string>'check not already in list</string>
+        <string>Gui.Form.lvwMRB.KeyExist(V.Screen.Form!ddlMRB.Text, V.Local.bExists)</string>
+        <string>F.Intrinsic.Control.If(V.Local.bExists, =, False)</string>
+        <string>	Gui.Form.lvwMRB.AddListItem(V.Screen.Form!ddlMRB.Text,V.Screen.Form!ddlMRB.Text)</string>
+        <string>F.Intrinsic.Control.Else</string>
+        <string>	F.Intrinsic.UI.Msgbox("Code exists in the List", "Code Exists")</string>
+        <string>F.Intrinsic.Control.EndIf</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("cmdAddMRB_Click_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	Function.Intrinsic.Control.CallSub(form_unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.cmdAddMRB_Click.End</string>
+        <string />
+        <string>Program.Sub.cmdRemoveMRB_Click.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("cmdRemoveMRB_Click_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string>V.Local.sError.Declare(String)</string>
+        <string />
+        <string>Gui.Form.lvwMRB.removeitem(V.Screen.Form!lvwMRB.SelectedItemKey)</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("cmdRemoveMRB_Click_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	Function.Intrinsic.Control.CallSub(form_unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.cmdRemoveMRB_Click.End</string>
+        <string />
+        <string>Program.Sub.cmdSave_Click.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("cmdSave_Click_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string>V.Local.sError.Declare(String)</string>
+        <string>V.Local..BulkDeclareString(sReWork, sReTest, sMRB, sFields, sValues, ssql, sRet)</string>
+        <string />
+        <string>Gui.Form.lvwReWork.RetrieveAllListItems(V.local.sReWork)</string>
+        <string>F.Intrinsic.String.Replace(V.local.sReWork, "*!*", "@!@", V.local.sReWork)</string>
+        <string>Function.Intrinsic.Control.If(V.local.sReWork, =, "***NORETURN***")</string>
+        <string>	V.local.sReWork.Set("")</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Gui.Form.lvwReTest.RetrieveAllListItems(V.local.sReTest)</string>
+        <string>F.Intrinsic.String.Replace(V.local.sReTest, "*!*", "@!@", V.local.sReTest)</string>
+        <string>Function.Intrinsic.Control.If(V.local.sReTest, =, "***NORETURN***")</string>
+        <string>	V.local.sReTest.Set("")</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Gui.Form.lvwMRB.RetrieveAllListItems(V.local.sMRB)</string>
+        <string>F.Intrinsic.String.Replace(V.local.sMRB, "*!*", "@!@", V.local.sMRB)</string>
+        <string>Function.Intrinsic.Control.If(V.local.sMRB, =, "***NORETURN***")</string>
+        <string>	V.local.sMRB.Set("")</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>'update or insert?</string>
+        <string>F.Intrinsic.String.Build("Select * From GCG_4612_QA_DATA Where WO = '{0}' And SUFFIX = '{1}' And SEQ = '{2}'", V.Global.sWoSuffix(0),V.Global.sWoSuffix(1), V.Global.sSeq, V.Local.ssql)</string>
+        <string />
+        <string>F.ODBC.Connection!con.ExecuteAndReturn(V.Local.ssql, V.Local.sRet)</string>
+        <string>Function.Intrinsic.Control.If(V.Local.sRet, =, "")</string>
+        <string>	'fields</string>
+        <string>	V.Local.sFields.Set("(WO, SUFFIX, SEQ, HOLD_COUNT, RW_COUNT, RW_NOTES, RW_CODES, RT_COUNT, CAR_NOTES, RT_CODES, MRB_COUNT, PAR_NOTES, MRB_CODES)")</string>
+        <string>	'values</string>
+        <string>	F.Intrinsic.String.Build(" '{0}', '{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}', '{12}' ", V.Global.sWoSuffix(0),V.Global.sWoSuffix(1), V.Global.sSeq, V.Screen.Form!txtHold.Text, V.Screen.Form!txtWorkCount.Text, V.Screen.Form!txtNotesReWork.Text, V.local.sReWork, V.Screen.Form!txtTestCount.Text, V.Screen.Form!txtNotesCar.Text, V.local.sReTest,  V.Screen.Form!txtMRBCount.Text, V.Screen.Form!txtNotesPAR.Text, V.local.sMRB, V.Local.sValues)  </string>
+        <string>	'insert</string>
+        <string>	F.Intrinsic.String.Build("Insert Into GCG_4612_QA_DATA {0} Values({1})", V.Local.sFields, V.Local.sValues, V.Local.ssql)</string>
+        <string>	F.ODBC.Connection!con.Execute(V.Local.ssql)</string>
+        <string>Function.Intrinsic.Control.Else</string>
+        <string>	F.Intrinsic.String.Build(" HOLD_COUNT='{0}', RW_COUNT='{1}',RW_NOTES='{2}',RW_CODES='{3}',RT_COUNT='{4}',CAR_NOTES='{5}'", V.Screen.Form!txtHold.Text, V.Screen.Form!txtWorkCount.Text, V.Screen.Form!txtNotesReWork.Text, V.local.sReWork, V.Screen.Form!txtTestCount.Text, V.Screen.Form!txtNotesCar.Text, V.Local.sValues)</string>
+        <string>	F.Intrinsic.String.Build("{0}, RT_CODES='{1}', MRB_COUNT='{2}',PAR_NOTES='{3}',MRB_CODES='{4}'", V.Local.sValues,V.local.sReTest,  V.Screen.Form!txtMRBCount.Text, V.Screen.Form!txtNotesPAR.Text, V.local.sMRB, V.Local.sValues)</string>
+        <string>	F.Intrinsic.String.Build("Update GCG_4612_QA_DATA Set {0} Where WO='{1}' And SUFFIX ='{2}' And SEQ ='{3}'", V.Local.sValues, V.Global.sWoSuffix(0),V.Global.sWoSuffix(1), V.Global.sSeq, V.Local.ssql)</string>
+        <string>	F.ODBC.Connection!con.Execute(V.Local.ssql)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Function.Intrinsic.Control.CallSub(form_unload)</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("cmdSave_Click_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	Function.Intrinsic.Control.CallSub(form_unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.cmdSave_Click.End</string>
+        <string />
+        <string>Program.Sub.EXISTS.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("EXISTS_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string>V.Local.sError.Declare(String)</string>
+        <string />
+        <string>V.Local..BulkDeclareString(ssql, sRet, sTemp)</string>
+        <string>V.Local.iC.Declare(Long)</string>
+        <string>F.Intrinsic.String.Build("Select * From GCG_4612_QA_DATA Where WO = '{0}' And SUFFIX = '{1}' And SEQ = '{2}'", V.Global.sWoSuffix(0),V.Global.sWoSuffix(1), V.Global.sSeq, V.Local.ssql)</string>
+        <string>'check if exists- populate form if it does</string>
+        <string>F.ODBC.Connection!con.ExecuteAndReturn(V.Local.ssql, V.Local.sRet)</string>
+        <string>Function.Intrinsic.Control.If(V.Local.sRet, &lt;&gt;, "")</string>
+        <string>	F.Intrinsic.String.Split(V.Local.sRet, "*!*", V.Local.sRet)</string>
+        <string>	GUI.Form.txtHold.Text(V.Local.sRet(3))</string>
+        <string>	GUI.Form.txtWorkCount.Text(V.Local.sRet(4))</string>
+        <string>	GUI.Form.txtNotesReWork.Text(V.Local.sRet(5))</string>
+        <string>	V.Local.sTemp.Set(V.Local.sRet(6))</string>
+        <string>	F.Intrinsic.String.Split(V.Local.sTemp, "@!@", V.Local.sTemp)</string>
+        <string>	F.Intrinsic.Control.For(V.Local.iC, 0, V.Local.sTemp.UBound, 1)</string>
+        <string>		Gui.Form.lvwReWork.AddListItem(V.Local.sTemp(V.Local.iC), V.Local.sTemp(V.Local.iC))</string>
+        <string>	F.Intrinsic.Control.Next(V.Local.iC)</string>
+        <string>	GUI.Form.txtTestCount.Text(V.Local.sRet(7))</string>
+        <string>	GUI.Form.txtNotesCar.Text(V.Local.sRet(8))	</string>
+        <string>	V.Local.sTemp.Set(V.Local.sRet(9))</string>
+        <string>	F.Intrinsic.String.Split(V.Local.sTemp, "@!@", V.Local.sTemp)</string>
+        <string>	F.Intrinsic.Control.For(V.Local.iC, 0, V.Local.sTemp.UBound, 1)</string>
+        <string>		Gui.Form.lvwReTest.AddListItem(V.Local.sTemp(V.Local.iC), V.Local.sTemp(V.Local.iC))</string>
+        <string>	F.Intrinsic.Control.Next(V.Local.iC)</string>
+        <string>	GUI.Form.txtMRBCount.Text(V.Local.sRet(10))</string>
+        <string>	GUI.Form.txtNotesPAR.Text(V.Local.sRet(11))</string>
+        <string>	V.Local.sTemp.Set(V.Local.sRet(12))</string>
+        <string>	F.Intrinsic.String.Split(V.Local.sTemp, "@!@", V.Local.sTemp)</string>
+        <string>	F.Intrinsic.Control.For(V.Local.iC, 0, V.Local.sTemp.UBound, 1)</string>
+        <string>		Gui.Form.lvwMRB.AddListItem(V.Local.sTemp(V.Local.iC), V.Local.sTemp(V.Local.iC))</string>
+        <string>	F.Intrinsic.Control.Next(V.Local.iC)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string>F.Intrinsic.Control.Label("EXISTS_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	Function.Intrinsic.Control.CallSub(form_unload)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.EXISTS.End</string>
+        <string />
+        <string>Program.Sub.Comments.Start</string>
+        <string>${$0$}$$}$$}$12:00:00 AM$}$False</string>
+        <string>Program.Sub.Comments.End</string>
+      </Lines>
+    </TextStrings>
+  </TextSource>
+  <Scrolling>
+    <WindowOriginY>221</WindowOriginY>
+  </Scrolling>
+  <Outlining>
+    <AllowOutlining>true</AllowOutlining>
+    <ImageSize>8</ImageSize>
+    <Ranges>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>0</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>131</Y>
+        </EndPoint>
+        <Text>Program.Sub.ScreenSU</Text>
+        <DisplayText>Program.Sub.ScreenSU</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>133</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>135</Y>
+        </EndPoint>
+        <Text>Program.Sub.Preflight</Text>
+        <DisplayText>Program.Sub.Preflight</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>137</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>174</Y>
+        </EndPoint>
+        <Text>Program.Sub.Main</Text>
+        <DisplayText>Program.Sub.Main</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>176</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>193</Y>
+        </EndPoint>
+        <Text>Program.Sub.Form_UnLoad</Text>
+        <DisplayText>Program.Sub.Form_UnLoad</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>195</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>216</Y>
+        </EndPoint>
+        <Text>Program.Sub.cmdAddRW_Click</Text>
+        <DisplayText>Program.Sub.cmdAddRW_Click</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>218</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>232</Y>
+        </EndPoint>
+        <Text>Program.Sub.cmdRemoveRW_Click</Text>
+        <DisplayText>Program.Sub.cmdRemoveRW_Click</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>234</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>255</Y>
+        </EndPoint>
+        <Text>Program.Sub.cmdAddReTest_Click</Text>
+        <DisplayText>Program.Sub.cmdAddReTest_Click</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>257</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>271</Y>
+        </EndPoint>
+        <Text>Program.Sub.cmdRemoveReTest_Click</Text>
+        <DisplayText>Program.Sub.cmdRemoveReTest_Click</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>273</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>294</Y>
+        </EndPoint>
+        <Text>Program.Sub.cmdAddMRB_Click</Text>
+        <DisplayText>Program.Sub.cmdAddMRB_Click</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>296</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>310</Y>
+        </EndPoint>
+        <Text>Program.Sub.cmdRemoveMRB_Click</Text>
+        <DisplayText>Program.Sub.cmdRemoveMRB_Click</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>312</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>360</Y>
+        </EndPoint>
+        <Text>Program.Sub.cmdSave_Click</Text>
+        <DisplayText>Program.Sub.cmdSave_Click</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>362</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>405</Y>
+        </EndPoint>
+        <Text>Program.Sub.EXISTS</Text>
+        <DisplayText>Program.Sub.EXISTS</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>407</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>409</Y>
+        </EndPoint>
+        <Text>Program.Sub.Comments</Text>
+        <DisplayText>Program.Sub.Comments</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+    </Ranges>
+  </Outlining>
+  <HyperText />
+  <Spelling />
+  <Braces />
+</SyntaxEdit>
