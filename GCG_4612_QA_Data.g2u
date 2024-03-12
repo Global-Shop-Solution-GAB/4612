@@ -1,0 +1,410 @@
+Program.Sub.ScreenSU.Start
+Gui.Form..Create
+Gui.Form..Caption("Inspection Data Collection")
+Gui.Form..Size(5220,9225)
+Gui.Form..MinX(0)
+Gui.Form..MinY(0)
+Gui.Form..Position(0,0)
+Gui.Form..BackColor(-2147483633)
+Gui.Form..MousePointer(0)
+Gui.Form..Event(UnLoad,Form_UnLoad)
+Gui.Form.txtHold.Create(TextBox,"",True,1215,300,0,1125,135,True,0,"Arial",8,-2147483643,1)
+Gui.Form.lbl1.Create(Label,"Hold Count",True,900,255,0,135,225,True,0,"Arial",8,-2147483633,0)
+Gui.Form.frameReWork.Create(Frame)
+Gui.Form.frameReWork.Size(4740,2355)
+Gui.Form.frameReWork.Position(135,600)
+Gui.Form.frameReWork.Caption("Re-Work")
+Gui.Form.lbl2.Create(Label,"Re-Work Count",True,1245,255,0,30,255,True,0,"Arial",8,-2147483633,0)
+Gui.Form.lbl2.Parent("frameReWork")
+Gui.Form.txtWorkCount.Create(TextBox,"",True,1215,300,0,1320,195,True,0,"Arial",8,-2147483643,1)
+Gui.Form.txtWorkCount.Parent("frameReWork")
+Gui.Form.lbl5.Create(Label,"Notes Re-Work",True,1320,255,0,75,645,True,0,"Arial",8,-2147483633,0)
+Gui.Form.lbl5.Parent("frameReWork")
+Gui.Form.txtNotesReWork.Create(TextboxM)
+Gui.Form.txtNotesReWork.Size(2115,1155)
+Gui.Form.txtNotesReWork.Position(90,870)
+Gui.Form.txtNotesReWork.Parent("frameReWork")
+Gui.Form.lbl8.Create(Label,"Codes",True,630,255,0,2655,645,True,0,"Arial",8,-2147483633,0)
+Gui.Form.lbl8.Parent("frameReWork")
+Gui.Form.ddlCodesRw.Create(DropDownList)
+Gui.Form.ddlCodesRw.Size(1005,330)
+Gui.Form.ddlCodesRw.Position(3510,570)
+Gui.Form.ddlCodesRw.Parent("frameReWork")
+Gui.Form.cmdAddRW.Create(Button)
+Gui.Form.cmdAddRW.Size(855,375)
+Gui.Form.cmdAddRW.Position(3615,1035)
+Gui.Form.cmdAddRW.Parent("frameReWork")
+Gui.Form.cmdAddRW.Caption("Add")
+Gui.Form.cmdAddRW.Event(Click,cmdAddRW_Click)
+Gui.Form.cmdRemoveRW.Create(Button)
+Gui.Form.cmdRemoveRW.Size(855,375)
+Gui.Form.cmdRemoveRW.Position(3615,1545)
+Gui.Form.cmdRemoveRW.Parent("frameReWork")
+Gui.Form.cmdRemoveRW.Caption("Remove")
+Gui.Form.cmdRemoveRW.Event(Click,cmdRemoveRW_Click)
+Gui.Form.lvwReWork.Create(ListView)
+Gui.Form.lvwReWork.Size(900,1410)
+Gui.Form.lvwReWork.Position(2565,855)
+Gui.Form.lvwReWork.Parent("frameReWork")
+Gui.Form.lvwReWork.View(2)
+Gui.Form.lvwReWork.BorderStyle(1)
+Gui.Form.frameReTest.Create(Frame)
+Gui.Form.frameReTest.Size(4830,2580)
+Gui.Form.frameReTest.Position(120,3090)
+Gui.Form.frameReTest.Caption("Re-Test")
+Gui.Form.lbl3.Create(Label,"Re-Test Count",True,1155,255,0,120,375,True,0,"Arial",8,-2147483633,0)
+Gui.Form.lbl3.Parent("frameReTest")
+Gui.Form.txtTestCount.Create(TextBox,"",True,1215,300,0,1290,300,True,0,"Arial",8,-2147483643,1)
+Gui.Form.txtTestCount.Parent("frameReTest")
+Gui.Form.txtNotesCar.Create(TextboxM)
+Gui.Form.txtNotesCar.Size(2115,1155)
+Gui.Form.txtNotesCar.Position(150,945)
+Gui.Form.txtNotesCar.Parent("frameReTest")
+Gui.Form.lbl7.Create(Label,"Notes CAR",True,1155,255,0,150,720,True,0,"Arial",8,-2147483633,0)
+Gui.Form.lbl7.Parent("frameReTest")
+Gui.Form.ddlCodesRT.Create(DropDownList)
+Gui.Form.ddlCodesRT.Size(975,330)
+Gui.Form.ddlCodesRT.Position(3510,600)
+Gui.Form.ddlCodesRT.Parent("frameReTest")
+Gui.Form.lvwReTest.Create(ListView)
+Gui.Form.lvwReTest.Size(900,1410)
+Gui.Form.lvwReTest.Position(2565,945)
+Gui.Form.lvwReTest.Parent("frameReTest")
+Gui.Form.lvwReTest.View(2)
+Gui.Form.lvwReTest.BorderStyle(1)
+Gui.Form.lbl9.Create(Label,"Codes",True,720,255,0,2655,690,True,0,"Arial",8,-2147483633,0)
+Gui.Form.lbl9.Parent("frameReTest")
+Gui.Form.cmdAddReTest.Create(Button)
+Gui.Form.cmdAddReTest.Size(855,375)
+Gui.Form.cmdAddReTest.Position(3540,1065)
+Gui.Form.cmdAddReTest.Parent("frameReTest")
+Gui.Form.cmdAddReTest.Caption("Add")
+Gui.Form.cmdAddReTest.Event(Click,cmdAddReTest_Click)
+Gui.Form.cmdRemoveReTest.Create(Button)
+Gui.Form.cmdRemoveReTest.Size(855,375)
+Gui.Form.cmdRemoveReTest.Position(3555,1560)
+Gui.Form.cmdRemoveReTest.Parent("frameReTest")
+Gui.Form.cmdRemoveReTest.Caption("Remove")
+Gui.Form.cmdRemoveReTest.Event(Click,cmdRemoveReTest_Click)
+Gui.Form.frameMRB.Create(Frame)
+Gui.Form.frameMRB.Size(4800,2685)
+Gui.Form.frameMRB.Position(120,5880)
+Gui.Form.frameMRB.Caption("MRB")
+Gui.Form.lbl6.Create(Label,"Notes PAR",True,1080,255,0,135,840,True,0,"Arial",8,-2147483633,0)
+Gui.Form.lbl6.Parent("frameMRB")
+Gui.Form.txtNotesPAR.Create(TextboxM)
+Gui.Form.txtNotesPAR.Size(2115,1155)
+Gui.Form.txtNotesPAR.Position(195,1185)
+Gui.Form.txtNotesPAR.Parent("frameMRB")
+Gui.Form.lbl4.Create(Label,"MRB Count",True,1020,255,0,90,375,True,0,"Arial",8,-2147483633,0)
+Gui.Form.lbl4.Parent("frameMRB")
+Gui.Form.txtMRBCount.Create(TextBox,"",True,1215,300,0,1140,330,True,0,"Arial",8,-2147483643,1)
+Gui.Form.txtMRBCount.Parent("frameMRB")
+Gui.Form.lbl10.Create(Label,"Codes",True,660,255,0,2655,750,True,0,"Arial",8,-2147483633,0)
+Gui.Form.lbl10.Parent("frameMRB")
+Gui.Form.ddlMRB.Create(DropDownList)
+Gui.Form.ddlMRB.Size(930,330)
+Gui.Form.ddlMRB.Position(3645,705)
+Gui.Form.ddlMRB.Parent("frameMRB")
+Gui.Form.lvwMRB.Create(ListView)
+Gui.Form.lvwMRB.Size(900,1410)
+Gui.Form.lvwMRB.Position(2565,1065)
+Gui.Form.lvwMRB.Parent("frameMRB")
+Gui.Form.lvwMRB.View(2)
+Gui.Form.lvwMRB.BorderStyle(1)
+Gui.Form.cmdAddMRB.Create(Button)
+Gui.Form.cmdAddMRB.Size(855,375)
+Gui.Form.cmdAddMRB.Position(3675,1170)
+Gui.Form.cmdAddMRB.Parent("frameMRB")
+Gui.Form.cmdAddMRB.Caption("Add")
+Gui.Form.cmdAddMRB.Event(Click,cmdAddMRB_Click)
+Gui.Form.cmdRemoveMRB.Create(Button)
+Gui.Form.cmdRemoveMRB.Size(855,375)
+Gui.Form.cmdRemoveMRB.Position(3690,1665)
+Gui.Form.cmdRemoveMRB.Parent("frameMRB")
+Gui.Form.cmdRemoveMRB.Caption("Remove")
+Gui.Form.cmdRemoveMRB.Event(Click,cmdRemoveMRB_Click)
+Gui.Form.cmdSave.Create(Button)
+Gui.Form.cmdSave.Size(1440,375)
+Gui.Form.cmdSave.Position(3225,135)
+Gui.Form.cmdSave.Caption("Save/Close")
+Gui.Form.cmdSave.Event(Click,cmdSave_Click)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+V.Global..BulkDeclareString(sWoSuffix, sSeq)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+V.Local.sError.Declare(String)
+
+V.Local.sIcon.Declare(String)
+V.Local..BulkDeclareString(ssql)
+F.ODBC.Connection!con.OpenConnection(v.Ambient.PDSN,v.Ambient.PUser,v.Ambient.PPass)
+
+Function.Intrinsic.Control.If(V.Caller.Hook, = , 15840)
+	'then rename script 1 button
+	V.Passed.000049.Set("DATA")
+Function.Intrinsic.Control.ElseIf(V.Caller.Hook, =, 15860)
+	'data collection
+	'icon stuff
+	F.Intrinsic.String.Build("{0}\GAB\GAS\gss2.ico",V.Caller.PluginsDir,v.Local.sIcon)
+	Gui.Form..Icon(V.Local.sIcon)
+	'populate ddls
+	F.Data.DataTable.CreateFromSQL(   "DDL",  "con" , "Select rTrim(QA) as QA , rTrim(QA) as QA From GCG_4612_Maint_QA" )
+	GUI.Form.ddlCodesRW.AddItems("DataTable", "DDL", "QA", "QA")
+	GUI.Form.ddlCodesRT.AddItems("DataTable", "DDL", "QA", "QA")
+	GUI.Form.ddlMRB.AddItems("DataTable", "DDL", "QA", "QA")
+	'populate if it already is there?
+	V.Global.sWoSuffix.Set(V.Passed.000004)
+	F.Intrinsic.String.Split(V.Global.sWOSuffix, "-", V.Global.sWOSuffix)
+	V.Global.sSeq.Set(V.Passed.000005)
+	Function.Intrinsic.Control.CallSub(exists)
+	GUI.Form..Show
+Function.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.CallSub(form_unload)
+Function.Intrinsic.Control.EndIf
+Program.Sub.Main.End
+
+Program.Sub.Form_UnLoad.Start
+F.Intrinsic.Control.SetErrorHandler("Form_UnLoad_Err")
+F.Intrinsic.Control.ClearErrors
+V.Local.sError.Declare(String)
+
+'close all
+GUI.Form..Visible(False)
+F.ODBC.Connection!con.Close 
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Label("Form_UnLoad_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.End
+
+Function.Intrinsic.Control.EndIf
+Program.Sub.Form_UnLoad.End
+
+Program.Sub.cmdAddRW_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdAddRW_Click_Err")
+F.Intrinsic.Control.ClearErrors
+V.Local.sError.Declare(String)
+
+V.Local.bExists.Declare(Boolean)
+'check not already in list
+Gui.Form.lvwReWork.KeyExist(V.Screen.Form!ddlCodesRW.Text, V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists, =, False)
+	Gui.Form.lvwReWork.AddListItem(V.Screen.Form!ddlCodesRW.Text,V.Screen.Form!ddlCodesRW.Text)
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.Msgbox("Code exists in the List", "Code Exists")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Label("cmdAddRW_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.CallSub(form_unload)
+Function.Intrinsic.Control.EndIf
+Program.Sub.cmdAddRW_Click.End
+
+Program.Sub.cmdRemoveRW_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdRemoveRW_Click_Err")
+F.Intrinsic.Control.ClearErrors
+V.Local.sError.Declare(String)
+
+Gui.Form.lvwReWork.removeitem(V.Screen.Form!lvwReWork.SelectedItemKey)
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Label("cmdRemoveRW_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.CallSub(form_unload)
+Function.Intrinsic.Control.EndIf
+Program.Sub.cmdRemoveRW_Click.End
+
+Program.Sub.cmdAddReTest_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdAddReTest_Click_Err")
+F.Intrinsic.Control.ClearErrors
+V.Local.sError.Declare(String)
+
+V.Local.bExists.Declare(Boolean)
+'check not already in list
+Gui.Form.lvwReTest.KeyExist(V.Screen.Form!ddlCodesRT.Text, V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists, =, False)
+	Gui.Form.lvwReTest.AddListItem(V.Screen.Form!ddlCodesRT.Text,V.Screen.Form!ddlCodesRT.Text)
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.Msgbox("Code exists in the List", "Code Exists")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Label("cmdAddReTest_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.CallSub(form_unload)
+Function.Intrinsic.Control.EndIf
+Program.Sub.cmdAddReTest_Click.End
+
+Program.Sub.cmdRemoveReTest_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdRemoveReTest_Click_Err")
+F.Intrinsic.Control.ClearErrors
+V.Local.sError.Declare(String)
+
+Gui.Form.lvwReTest.removeitem(V.Screen.Form!lvwReTest.SelectedItemKey)
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Label("cmdRemoveReTest_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.CallSub(form_unload)
+Function.Intrinsic.Control.EndIf
+Program.Sub.cmdRemoveReTest_Click.End
+
+Program.Sub.cmdAddMRB_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdAddMRB_Click_Err")
+F.Intrinsic.Control.ClearErrors
+V.Local.sError.Declare(String)
+
+V.Local.bExists.Declare(Boolean)
+'check not already in list
+Gui.Form.lvwMRB.KeyExist(V.Screen.Form!ddlMRB.Text, V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists, =, False)
+	Gui.Form.lvwMRB.AddListItem(V.Screen.Form!ddlMRB.Text,V.Screen.Form!ddlMRB.Text)
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.Msgbox("Code exists in the List", "Code Exists")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Label("cmdAddMRB_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.CallSub(form_unload)
+Function.Intrinsic.Control.EndIf
+Program.Sub.cmdAddMRB_Click.End
+
+Program.Sub.cmdRemoveMRB_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdRemoveMRB_Click_Err")
+F.Intrinsic.Control.ClearErrors
+V.Local.sError.Declare(String)
+
+Gui.Form.lvwMRB.removeitem(V.Screen.Form!lvwMRB.SelectedItemKey)
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Label("cmdRemoveMRB_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.CallSub(form_unload)
+Function.Intrinsic.Control.EndIf
+Program.Sub.cmdRemoveMRB_Click.End
+
+Program.Sub.cmdSave_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdSave_Click_Err")
+F.Intrinsic.Control.ClearErrors
+V.Local.sError.Declare(String)
+V.Local..BulkDeclareString(sReWork, sReTest, sMRB, sFields, sValues, ssql, sRet)
+
+Gui.Form.lvwReWork.RetrieveAllListItems(V.local.sReWork)
+F.Intrinsic.String.Replace(V.local.sReWork, "*!*", "@!@", V.local.sReWork)
+Function.Intrinsic.Control.If(V.local.sReWork, =, "***NORETURN***")
+	V.local.sReWork.Set("")
+Function.Intrinsic.Control.EndIf
+Gui.Form.lvwReTest.RetrieveAllListItems(V.local.sReTest)
+F.Intrinsic.String.Replace(V.local.sReTest, "*!*", "@!@", V.local.sReTest)
+Function.Intrinsic.Control.If(V.local.sReTest, =, "***NORETURN***")
+	V.local.sReTest.Set("")
+Function.Intrinsic.Control.EndIf
+Gui.Form.lvwMRB.RetrieveAllListItems(V.local.sMRB)
+F.Intrinsic.String.Replace(V.local.sMRB, "*!*", "@!@", V.local.sMRB)
+Function.Intrinsic.Control.If(V.local.sMRB, =, "***NORETURN***")
+	V.local.sMRB.Set("")
+Function.Intrinsic.Control.EndIf
+'update or insert?
+F.Intrinsic.String.Build("Select * From GCG_4612_QA_DATA Where WO = '{0}' And SUFFIX = '{1}' And SEQ = '{2}'", V.Global.sWoSuffix(0),V.Global.sWoSuffix(1), V.Global.sSeq, V.Local.ssql)
+
+F.ODBC.Connection!con.ExecuteAndReturn(V.Local.ssql, V.Local.sRet)
+Function.Intrinsic.Control.If(V.Local.sRet, =, "")
+	'fields
+	V.Local.sFields.Set("(WO, SUFFIX, SEQ, HOLD_COUNT, RW_COUNT, RW_NOTES, RW_CODES, RT_COUNT, CAR_NOTES, RT_CODES, MRB_COUNT, PAR_NOTES, MRB_CODES)")
+	'values
+	F.Intrinsic.String.Build(" '{0}', '{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}', '{12}' ", V.Global.sWoSuffix(0),V.Global.sWoSuffix(1), V.Global.sSeq, V.Screen.Form!txtHold.Text, V.Screen.Form!txtWorkCount.Text, V.Screen.Form!txtNotesReWork.Text, V.local.sReWork, V.Screen.Form!txtTestCount.Text, V.Screen.Form!txtNotesCar.Text, V.local.sReTest,  V.Screen.Form!txtMRBCount.Text, V.Screen.Form!txtNotesPAR.Text, V.local.sMRB, V.Local.sValues)  
+	'insert
+	F.Intrinsic.String.Build("Insert Into GCG_4612_QA_DATA {0} Values({1})", V.Local.sFields, V.Local.sValues, V.Local.ssql)
+	F.ODBC.Connection!con.Execute(V.Local.ssql)
+Function.Intrinsic.Control.Else
+	F.Intrinsic.String.Build(" HOLD_COUNT='{0}', RW_COUNT='{1}',RW_NOTES='{2}',RW_CODES='{3}',RT_COUNT='{4}',CAR_NOTES='{5}'", V.Screen.Form!txtHold.Text, V.Screen.Form!txtWorkCount.Text, V.Screen.Form!txtNotesReWork.Text, V.local.sReWork, V.Screen.Form!txtTestCount.Text, V.Screen.Form!txtNotesCar.Text, V.Local.sValues)
+	F.Intrinsic.String.Build("{0}, RT_CODES='{1}', MRB_COUNT='{2}',PAR_NOTES='{3}',MRB_CODES='{4}'", V.Local.sValues,V.local.sReTest,  V.Screen.Form!txtMRBCount.Text, V.Screen.Form!txtNotesPAR.Text, V.local.sMRB, V.Local.sValues)
+	F.Intrinsic.String.Build("Update GCG_4612_QA_DATA Set {0} Where WO='{1}' And SUFFIX ='{2}' And SEQ ='{3}'", V.Local.sValues, V.Global.sWoSuffix(0),V.Global.sWoSuffix(1), V.Global.sSeq, V.Local.ssql)
+	F.ODBC.Connection!con.Execute(V.Local.ssql)
+Function.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.CallSub(form_unload)
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Label("cmdSave_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.CallSub(form_unload)
+Function.Intrinsic.Control.EndIf
+Program.Sub.cmdSave_Click.End
+
+Program.Sub.EXISTS.Start
+F.Intrinsic.Control.SetErrorHandler("EXISTS_Err")
+F.Intrinsic.Control.ClearErrors
+V.Local.sError.Declare(String)
+
+V.Local..BulkDeclareString(ssql, sRet, sTemp)
+V.Local.iC.Declare(Long)
+F.Intrinsic.String.Build("Select * From GCG_4612_QA_DATA Where WO = '{0}' And SUFFIX = '{1}' And SEQ = '{2}'", V.Global.sWoSuffix(0),V.Global.sWoSuffix(1), V.Global.sSeq, V.Local.ssql)
+'check if exists- populate form if it does
+F.ODBC.Connection!con.ExecuteAndReturn(V.Local.ssql, V.Local.sRet)
+Function.Intrinsic.Control.If(V.Local.sRet, <>, "")
+	F.Intrinsic.String.Split(V.Local.sRet, "*!*", V.Local.sRet)
+	GUI.Form.txtHold.Text(V.Local.sRet(3))
+	GUI.Form.txtWorkCount.Text(V.Local.sRet(4))
+	GUI.Form.txtNotesReWork.Text(V.Local.sRet(5))
+	V.Local.sTemp.Set(V.Local.sRet(6))
+	F.Intrinsic.String.Split(V.Local.sTemp, "@!@", V.Local.sTemp)
+	F.Intrinsic.Control.For(V.Local.iC, 0, V.Local.sTemp.UBound, 1)
+		Gui.Form.lvwReWork.AddListItem(V.Local.sTemp(V.Local.iC), V.Local.sTemp(V.Local.iC))
+	F.Intrinsic.Control.Next(V.Local.iC)
+	GUI.Form.txtTestCount.Text(V.Local.sRet(7))
+	GUI.Form.txtNotesCar.Text(V.Local.sRet(8))	
+	V.Local.sTemp.Set(V.Local.sRet(9))
+	F.Intrinsic.String.Split(V.Local.sTemp, "@!@", V.Local.sTemp)
+	F.Intrinsic.Control.For(V.Local.iC, 0, V.Local.sTemp.UBound, 1)
+		Gui.Form.lvwReTest.AddListItem(V.Local.sTemp(V.Local.iC), V.Local.sTemp(V.Local.iC))
+	F.Intrinsic.Control.Next(V.Local.iC)
+	GUI.Form.txtMRBCount.Text(V.Local.sRet(10))
+	GUI.Form.txtNotesPAR.Text(V.Local.sRet(11))
+	V.Local.sTemp.Set(V.Local.sRet(12))
+	F.Intrinsic.String.Split(V.Local.sTemp, "@!@", V.Local.sTemp)
+	F.Intrinsic.Control.For(V.Local.iC, 0, V.Local.sTemp.UBound, 1)
+		Gui.Form.lvwMRB.AddListItem(V.Local.sTemp(V.Local.iC), V.Local.sTemp(V.Local.iC))
+	F.Intrinsic.Control.Next(V.Local.iC)
+Function.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Label("EXISTS_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4612_QA_Data.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.CallSub(form_unload)
+Function.Intrinsic.Control.EndIf
+Program.Sub.EXISTS.End
+
+Program.Sub.Comments.Start
+${$0$}$$}$$}$12:00:00 AM$}$False
+Program.Sub.Comments.End
